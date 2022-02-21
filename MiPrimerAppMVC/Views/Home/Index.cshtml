@@ -1,0 +1,29 @@
+﻿@model MiPrimerAppMVC.Models.ErrorViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<p>@ViewBag.Message</p>
+<p>@ViewData["Mensaje"]</p>
+<p>@ViewBag.Entero</p>
+<p>@ViewBag.Decimal</p>
+<p>El resultado de la operacion es : @(ViewBag.Decimal*2)</p>
+<p>El resultado de la operacion de viewData es : @((decimal)ViewData["Decimal2"]*2)</p>
+<p>Hoy es @ViewBag.Fecha</p>
+<p>Mañana es @((ViewBag.Fecha).AddDays(1))</p>
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@for(int i = 0; i<ViewBag.Decimal; i++){
+    <li>item @@i</li>
+    <li>item @(i*2)</li>
+    <p>correo@@i@gmail.com</p>
+    
+}
+
+@DateTime.Now.DayOfYear

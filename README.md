@@ -1,0 +1,1 @@
+Aplicación MVC con funcionalidad de CRUD productos, usando SQLite para persistencia de datos
